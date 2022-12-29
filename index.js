@@ -34,7 +34,7 @@ document.querySelector('.out6').innerHTML = result
 
 let res4 = 0
 for (let i = 30; i<81;i++){
-    if(i % 2 === 0){
+    if(i % 2 ===
         res4 +=i
     }
 }
