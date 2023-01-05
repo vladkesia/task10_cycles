@@ -50,27 +50,42 @@ for (let i = 100; i<201; i++){
 document.querySelector('.out8').innerHTML = arr5.join()
 
 const arr6 =[]
-const sum = []
+let sum = 0
 const num = 12
 let resul1 = 0
-for (let i = 1; i<num;i++){
+for (let i = 1; i<=num;i++){
        if (num%i === 0){
            arr6.push(i)
            if(i%2 === 0){
                resul1 +=i
-               sum.push(i)
+               sum++
            }
    }
 }
 document.querySelector('.out9').innerHTML = arr6.join()
 document.querySelector('.out9-1').innerHTML = resul1
-document.querySelector('.out9-2').innerHTML = sum.length
+document.querySelector('.out9-2').innerHTML = sum
 
 const arr7 = []
 for (let i = 1;i<11;i++){
-    arr7.push('<hr>')
+    arr7.push('\n')
     for (let j = 1; j<11;j++){
-        arr7.push(`${i} * ${j} = ${i*j}<br>`)
+        if(i*j<10){
+            arr7.push(`${i*j}   `)
+        }else {
+            arr7.push(`${i*j} `)
+        }
+
     }
 }
-document.querySelector('.out10').innerHTML = arr7.join(' ')
+alert( arr7.join(' '))
+
+
+
+
+
+
+
+
+
+
